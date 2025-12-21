@@ -1,15 +1,34 @@
+const sidebar = document.getElementById("sidebar");
+const button = document.getElementById("nav-button");
 
-function showSidebar() {
-    const navBar = document.getElementById("nav-bar");
-    if (navBar.style.display == 'none') {
-        navBar.style.display = 'flex';
+button.addEventListener("click", () => {
+    sidebar.classList.toggle("open");
+});
+
+
+function typeText(element, text, delay = 100, callback) {
+    element.style.visibility = "visible"; 
+    element.textContent = ""; 
+    let i = 0;
+
+    function typeNext() {
+        if (i < text.length) {
+            setTimeout(typeNext, delay);
+            element.textContent += text[i];
+            i++;
+
+        } else if (callback) {
+            callback();
+        }
     }
-    else {
-        navBar.style.display = 'none';
-    }
+
+    typeNext();
 }
 
 
-const button = document.getElementById("nav-button");
+const header = document.getElementById("greeting");
+const footer = document.getElementById("greeting-footer");
 
-button.addEventListener("click", showSidebar);
+typeText(header, "Welcome to my Website", 100, () => {
+    typeText(footer, "Made by Quinn Olney", 100);
+});
