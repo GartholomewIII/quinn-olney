@@ -3,6 +3,7 @@ const button = document.getElementById("nav-button");
 
 button.addEventListener("click", () => {
     sidebar.classList.toggle("open");
+    button.classList.toggle("on");
 });
 
 
