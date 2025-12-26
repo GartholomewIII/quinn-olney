@@ -60,11 +60,11 @@ nav {
     background-position: 50% 50%;
     background-size: contain;
     position: absolute;
-    top: 20px;
-    right: -100px;
+    top: 18px;
+    right: -82px;
 
-    width: 80px;
-    height: 80px;
+    width: 64px;
+    height: 64px;
     border: none;
 
     cursor: pointer;
@@ -116,7 +116,7 @@ span {
 .text-box, .left-content, .center-cont {
     flex: 1;
 
-    border: 2px solid black;
+
 
 }
 
@@ -138,14 +138,17 @@ span {
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
 }
 
 .icons {
     
-    
-    position: absolute;
-    bottom: 0;
+    display: flex;
+    margin-top: auto;
+    width: 100%;
+
+    justify-content: space-evenly;
+
 
     margin-bottom: 25px;
 }
@@ -192,26 +195,53 @@ span {
 }
 
 .bottom-desc {
-    position: absolute;
-
-    bottom: 0;
-
-
-    padding-bottom: 25px;
-
-    width: 100%;
-    height: 30%;
-
     display: flex;
-    justify-content: center;
-    align-items: flex-end;
+    margin-top: auto;
+    width: 75%;
 
+    justify-content: center;
+    align-items: center;
+
+
+    margin-bottom: 25px;
+
+}
+
+.bottom-desc h1 {
+    font-size: large;
+    text-align: center;
 }
 
 .left-content {
     width: 70%;
     height: 100%;
+    border: 2px solid black;
+    display: flex;
+}
+.left-bottom {
+    display: flex;
+    margin-top: auto;
+    width: 100%;
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+
+    
 }
 
+.arrow {
+    background-color: transparent;
+
+    background-repeat: no-repeat;
+    background-position: bottom center;
+
+    background-size: cover;
+
+    width: 90px;
+    height: 90px;
+    background-image: url('../assets/ARROW.png');
+}
 
 
