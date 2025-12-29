@@ -1,9 +1,14 @@
 const sidebar = document.getElementById("sidebar");
 const button = document.getElementById("nav-button");
+const body = document.getElementsByClassName("main-content")[0];
+
 
 button.addEventListener("click", () => {
     sidebar.classList.toggle("open");
     button.classList.toggle("on");
+
+    document.querySelector(".main-content").classList.toggle("shifted");
+
 });
 
 
