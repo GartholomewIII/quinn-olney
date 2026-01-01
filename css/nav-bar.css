@@ -98,7 +98,11 @@ span {
 
     background-image: url('../assets/HOUSE.png');
 
-    
+    transition: transform 0.3s ease-in-out;
+}
+
+#house:hover {
+    transform: scale(2);
 }
 
 

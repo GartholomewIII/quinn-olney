@@ -6,6 +6,9 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="../css/nav-bar.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/music-player.css">
 </head>
 <body>
     <div id="sidebar">
@@ -31,6 +34,26 @@
             </nav>
     </div>
 
-    <script src="../js/landing-page.js" defer></script>
+
+
+<div class="whole-content">
+
+    <div id="music-player">
+            <img id="song-image" src="./album-art1.jpg"/>
+            <div id="song-name">Song</div>
+            <div id="song-artist">Artist</div>
+
+            <input id="slider-song" type="range">
+
+            <div id="music-buttons">          
+                <i id="prev-song" class="fa-solid fa-backward-step fa-2x"></i>
+                <i id="playpause-song" class="fa-solid fa-circle-play fa-3x"></i>
+                <i id="next-song" class="fa-solid fa-forward-step fa-2x"></i>             
+            </div>
+        </div>
+
+</div>
+        <script src="../js/music-player.js"></script>
+        <script src="../js/landing-page.js" defer></script>
 </body>
 </html>
