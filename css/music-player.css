@@ -22,35 +22,90 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
+
+    padding: 10px;
+
+    background-image: url('../assets/mp3-player.png');
+    background-size:cover;
+    background-repeat: no-repeat ;
+    background-position: center;
+
+    width: 300px;
+    height: 500px;
 
 
 
 }
 
 #song-image {
-    height: 300px;
-    width: 300px;
+    height: 100px;
+    width: 100px;
     border-radius: 10px;
 }
 
 #song-name {
-    margin-top: 20px;
-    font-size: 2em;
+
+    font-size: 1em;
+}
+
+#song-artist {
+    font-size: 0.5em;
 }
 
 #music-buttons {
     display: flex;
-    align-items: center;
-    margin-top: 20px;
+
+    margin-top: 90px;
+
+
+    margin-bottom: 28px;
 }
 
 #music-buttons:hover {
     cursor: pointer;
 }
 
-#music-buttons i {
-    padding: 10px;
-    /* color: red; */
+
+
+.backward-skip {
+    width: 64px;
+    height: 64px;
+
+    background-image: url('../assets/SKIP-BACKWARD.png');
+    background-size:cover;
+    background-repeat: no-repeat ;
+    background-position: center;
+}
+
+.forward-skip {
+    width: 64px;
+    height: 64px;
+
+    background-image: url('../assets/SKIP-FORWARD.png');
+    background-size:cover;
+    background-repeat: no-repeat ;
+    background-position: center;
+}
+
+.play {
+    width: 64px;
+    height: 64px;
+
+    background-image: url('../assets/PAUSE.png');
+    background-size:cover;
+    background-repeat: no-repeat ;
+    background-position: center;
+}
+
+.pause {
+    width: 64px;
+    height: 64px;
+
+    background-image: url('../assets/PLAY.png');
+    background-size:cover;
+    background-repeat: no-repeat ;
+    background-position: center;
 }
 
 #slider-song {
@@ -58,19 +113,21 @@ body {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    width: 300px;
+    width: 150px;
     height: 5px;
     background-color: gray;
 
     border-radius: 10px;
-    margin-top: 20px;
+
+    margin-top: 5px;
+
 }
 
 #slider-song::-webkit-slider-thumb {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    background: red;
+    background: #5e17eb;
     width: 15px;
     height: 15px;
     border-radius: 50%;

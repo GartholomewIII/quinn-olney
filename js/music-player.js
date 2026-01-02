@@ -13,19 +13,19 @@ const songs = [
         image: "../music/cover-assets/MUSIC-TO-WIGGLE-TO.png",
         name: "wat we did",
         artist: "gigawttz",
-        audio: "../music/audio-assets/wat-we-did.wav"
+        audio: "../music/audio-assets/wat-we-did.mp3"
     },
     {
-        image: "./album-art2.jpg",
-        name: "Jingle Bells",
-        artist: "James Lord Pierpont",
-        audio: "./jingle-bells.mp3"
+        image: "../music/cover-assets/MUSIC-TO-WIGGLE-TO.png",
+        name: "CLEARWATER",
+        artist: "gigawttz",
+        audio: "../music/audio-assets/CLEARWATER.mp3"
     },
     {
-        image: "./album-art3.jpg",
-        name: "Joy To The World",
-        artist: "Isaac Watts",
-        audio: "./joy-to-the-world.mp3",
+        image: "../music/cover-assets/MUSIC-TO-WIGGLE-TO.png",
+        name: "find your love",
+        artist: "gigawttz",
+        audio: "../music/audio-assets/find_your_luv_V1.mp3"
     },
 ];
 
@@ -52,9 +52,12 @@ nextSongButton.addEventListener("click", function() {
 
 playpauseButton.addEventListener("click", function() {
     if (!audio.paused) {
+        playpauseButton.classList.replace("play", "pause");
         audio.pause();
+
     }
     else {
+        playpauseButton.classList.replace("pause", "play");
         audio.play();
     }
 });
