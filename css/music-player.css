@@ -36,11 +36,11 @@ body {
 
     position: relative;
 
-
+    
 
 }
 
-.headphones {
+#headphones {
     position: absolute;
     width: 175px;
     height: 175px;
@@ -50,7 +50,7 @@ body {
 
 }
 
-.headphones:hover {
+#headphones:hover {
     cursor: pointer;
 }
 

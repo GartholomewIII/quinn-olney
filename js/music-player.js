@@ -8,6 +8,8 @@ const playpauseButton = document.getElementById("playpause-song");
 const prevSongButton = document.getElementById("prev-song");
 const nextSongButton = document.getElementById("next-song");
 
+let headphonesOn = false;
+
 const songs = [
     {
         image: "../music/cover-assets/MUSIC-TO-WIGGLE-TO.png",
@@ -30,9 +32,37 @@ const songs = [
 ];
 
 const audio = document.createElement("audio");
+
+const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+const source = audioCtx.createMediaElementSource(audio);
+
+
+const lowpass = audioCtx.createBiquadFilter();
+lowpass.type = "lowpass";
+lowpass.frequency.value = 1200; 
+
+const gain = audioCtx.createGain();
+gain.gain.value = 0.4; 
+
+
+source.connect(lowpass);
+lowpass.connect(gain);
+gain.connect(audioCtx.destination);
+
+
 let currentSongIndex = 0;
 
 updateSong();
+
+function updateAudioFilter() {
+    if (headphonesOn) {
+        lowpass.frequency.value = 20000; // full range
+        gain.gain.value = 1;
+    } else {
+        lowpass.frequency.value = 1200;  // muffled
+        gain.gain.value = 0.4;
+    }
+}
 
 prevSongButton.addEventListener("click", function() {
     if (currentSongIndex == 0) {
@@ -50,13 +80,13 @@ nextSongButton.addEventListener("click", function() {
     updateSong();
 });
 
-playpauseButton.addEventListener("click", function() {
+playpauseButton.addEventListener("click", function () {
+    audioCtx.resume();
+
     if (!audio.paused) {
         playpauseButton.classList.replace("play", "pause");
         audio.pause();
-
-    }
-    else {
+    } else {
         playpauseButton.classList.replace("pause", "play");
         audio.play();
     }
@@ -84,3 +114,18 @@ function moveSlider() {
 };
 
 setInterval(moveSlider, 1000);
+
+
+function putonHeadphones() {
+    const player = document.getElementById("music-player");
+
+    headphonesOn = !headphonesOn;
+
+    player.style.backgroundImage = headphonesOn
+        ? "url('../assets/mp3-player-on.png')"
+        : "url('../assets/mp3-player.png')";
+
+    updateAudioFilter();
+}
+
+document.getElementById("headphones").addEventListener('click', putonHeadphones);
