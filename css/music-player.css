@@ -18,10 +18,8 @@ body {
 }
 
 #music-player {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    position: relative;
+    
     box-sizing: border-box;
 
     padding: 10px;
@@ -29,14 +27,29 @@ body {
     background-image: url('../assets/mp3-player.png');
     background-size: 800px;
     background-repeat: no-repeat ;
-    background-position: center;
+    background-position: left;
 
-    width: 100%;
+    width: 50%;
     height: 100vh;
 
     position: relative;
 
     
+
+    
+
+}
+
+.mp3-player {
+    position: absolute;
+    top: 26%;
+    left: 51%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 
 }
 

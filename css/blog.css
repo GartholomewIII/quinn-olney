@@ -1,9 +1,18 @@
 * {
     box-sizing: border-box;
 }
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 body {
-    font-family: Arial;
+    font-family: "Courier Prime", monospace;
+    letter-spacing: 0.03em;
+
+
+}
+
+
+body {
+
 
     background: #f1f1f1;
     display: flex;
@@ -75,13 +84,11 @@ summary:hover {
 .right-bar {
     width: 100px ;
 
-    border: 1px solid black;
 }
 
 .left-bar {
     width: 100px;
 
-    border: 1px solid black;
 }
 
 @media screen and (max-width: 800px) {

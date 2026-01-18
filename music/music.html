@@ -17,13 +17,7 @@
         </button>
             
             <nav>
-                <div class="home" alt="house">
-                    <form action="../index.html" method="get">
-                        <button id="house">
-                                <span></span>
-                        </button>
-                    </form>
-                </div>
+                <a href="../index.html">Home</a>
 
                 <a href="../portfolio/portfolio.html">Portfolio</a>
 
@@ -42,21 +36,23 @@
         <div id="headphones">
 
         </div>
-            <img id="song-image" src="./album-art1.jpg"/>
-            <div id="song-name">Song</div>
-            <div id="song-artist">Artist</div>
+            <div class="mp3-player">
+                <img id="song-image" src="./album-art1.jpg"/>
+                <div id="song-name">Song</div>
+                <div id="song-artist">Artist</div>
 
-            <input id="slider-song" type="range">
+                <input id="slider-song" type="range">
 
-            <div id="music-buttons">          
-                <i id="prev-song" class="backward-skip"></i>
-                <i id="playpause-song" class="pause"></i>
-                <i id="next-song" class="forward-skip"></i>             
+                <div id="music-buttons">          
+                    <i id="prev-song" class="backward-skip"></i>
+                    <i id="playpause-song" class="pause"></i>
+                    <i id="next-song" class="forward-skip"></i>             
+                </div>
             </div>
         </div>
 
 </div>
         <script src="../js/music-player.js"></script>
-        <script src="../js/landing-page.js" defer></script>
+        <script src="../js/landing-page.js" ></script>
 </body>
 </html>
