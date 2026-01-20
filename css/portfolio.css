@@ -15,4 +15,92 @@ html, body {
 body {
     font-family: "Courier Prime", monospace;
     letter-spacing: 0.03em;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.whole-content {
+    width: 80%;
+    height: 100vh;
+
+    border: 2px solid black;
+    display: flex;
+}
+
+#tv {
+    background-color: transparent;
+    background-image: url("../assets/TV-OFF.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+    width: 75%;
+    height: 100%;
+}
+
+#tv-on {
+    
+}
+
+#remote {
+    background-color: transparent;
+    background-image: url("../assets/REMOTE.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 100%;
+    width: 25%;
+    height: 100%;
+    margin-right: 100px;
+
+}
+
+#music-buttons {
+    position: absolute;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+
+    margin-top: 60px;
+    width: 150px;
+
+    margin-bottom: 28px;
+}
+
+.center:hover {
+    cursor: pointer;
+}
+
+.backward-skip {
+    width: 32px;
+    height: 32px;
+
+    background-image: url('../assets/SKIP-BACKWARD.png');
+    background-size:cover;
+    background-repeat: no-repeat ;
+    background-position: center;
+}
+
+.forward-skip {
+    width: 32px;
+    height: 32px;
+
+    background-image: url('../assets/SKIP-FORWARD.png');
+    background-size:cover;
+    background-repeat: no-repeat ;
+    background-position: center;
+}
+
+.play-btn {
+    width: 32px;
+    height: 32px;
+
+    background-image: url('../assets/PLAY.png');
+    background-size:cover;
+    background-repeat: no-repeat ;
+    background-position: center;
 }
