@@ -19,28 +19,22 @@ body {
 
 #music-player {
     position: relative;
-    
-    box-sizing: border-box;
 
-    padding: 10px;
+    width: min(90vw, 800px);
+    height: 100vh;
+    aspect-ratio: 9/6;      /* match your player art */
+
+    margin: auto;
 
     background-image: url('../assets/mp3-player.png');
-    background-size: 800px;
-    background-repeat: no-repeat ;
-    background-position: left;
-
-    width: 50%;
-    height: 100vh;
-
-    position: relative;
-
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
-
 .mp3-player {
     position: absolute;
-    top: 26%;
-    left: 51%;
-
+    inset: 0;                 
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -55,7 +49,11 @@ body {
     height: 175px;
 
     top: 27%;
-    left: 24%;
+    left: 8%;
+
+
+
+    z-index: 2;
 
 }
 
