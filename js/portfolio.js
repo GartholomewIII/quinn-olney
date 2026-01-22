@@ -7,7 +7,7 @@ const projectTitle = document.getElementById("project-title");
 
 const projects = [
     {
-        image: '',
+        image: '../assets/portfolio-assets/dupify.png',
         title: 'Dupify',
         description: '',
     },

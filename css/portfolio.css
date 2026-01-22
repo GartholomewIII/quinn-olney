@@ -64,6 +64,7 @@ body {
     left: 140px;
 
 
+
 }
 
 #tv-display.show {
@@ -71,8 +72,12 @@ body {
 
     align-items: center;
     justify-content: center;
-    flex-direction: row;
+    flex-direction: column;
 
+}
+
+#project-img {
+    width: 200px;
 }
 
 #on-btn {
