@@ -5,6 +5,10 @@ const tvDisplay = document.getElementById("tv-display");
 const projectImage = document.getElementById("project-img");
 const projectTitle = document.getElementById("project-title");
 
+const playButton = document.getElementById('play');
+const skipForward = document.getElementById('forward');
+const skipBackward = document.getElementById('prev');
+
 const projects = [
     {
         image: '../assets/portfolio-assets/dupify.png',
