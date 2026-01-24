@@ -98,6 +98,7 @@ function UpdateProject() {
     modalTitle.innerText = project.title;
     modalImage.src = project.image;
     
+    projectDescription.innerText = project.description;
 }
 
 UpdateProject();
