@@ -22,31 +22,31 @@ const projects = [
     {
         image: '../assets/portfolio-assets/dupify.png',
         title: 'Dupify',
-        description: 'hello',
+        description: 'Using the PySide6 module from the QT framework I created native windows desktop application that mimics the function of Spotify Wrapped using the Spotify API.',
         link: 'https://github.com/GartholomewIII/Dupify-Wrapped',
     },
     {
-        image: '',
+        image: '../assets/portfolio-assets/LetsBuild.png',
         title: 'LetsBuild',
-        description: '',
+        description: 'Using the Django framework I created a web based, AI powered project assistant. First you create an account and sign in. Then you take a personality quiz, and then you get reccomended cool and unique projects based off of your interests. Then a roadmap is constructed for you to hold you accountable.',
         link: 'https://github.com/GartholomewIII/lets-build/tree/main',
     },
     {
-        image: '',
+        image: '../assets/portfolio-assets/OS.png',
         title: 'First-Kernel',
-        description: '',
+        description: 'Very simple OS made with raw C and assembly. Simple powershell and commands',
         link: 'https://github.com/GartholomewIII/babys-first-os',
     },
     {
-        image: '',
+        image: '../assets/portfolio-assets/star-sync-daw.png',
         title: 'StarSyncStudio',
-        description: '',
+        description: 'Digital Audio Workstation built with the JUCE library for the startup I cofounded in 2024. It provides a real time collaborative workflow with a NestJS backend hosted via fly.io ',
         link: 'https://www.starsyncstudio.com/',
     },
     {
-        image: '',
+        image: '../assets/portfolio-assets/star-sync-go.png',
         title: 'StarSync Companion',
-        description: '',
+        description: 'Social media companion app for the DAW built in flutter',
         link: 'https://github.com/GartholomewIII/starsync-go',
     },
 
@@ -59,6 +59,7 @@ onButton.addEventListener('click', () => {
     tv.classList.toggle('on');
 
     tvDisplay.classList.toggle('show');
+
 
 });
 

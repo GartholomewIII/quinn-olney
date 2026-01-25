@@ -84,12 +84,16 @@ body {
 }
 
 .project-img {
-    width: 200px;
+    max-width: 250px;
+    max-height: 100px;
+    width: auto;
     height: auto;
+    margin-bottom: 10px;
+    object-fit: contain;
 }
 
 .project-title {
-    font-size: 40px;
+    font-size: 30px;
     font-family: 'SundayMasthead';
     color: blue;
     
@@ -195,14 +199,13 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 
-    width: 500px;
+    width: 700px;
     height: 500px;
 
-    background-color: white;
+    background-color: rgb(255, 255, 255);
 
     display: none;
-
-    border-radius: 16px;
+    
     opacity: 0;
     transition: display 0.5s allow-discrete, opacity 0.5s;
 
@@ -210,6 +213,8 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.2);
 
 }
 
@@ -220,18 +225,31 @@ body {
 }
 
 #modal-img {
-    width: 250px;
+    max-width: 250px;
+    max-height: 200px;
+    width: auto;
     height: auto;
+    margin-bottom: 10px;
+    object-fit: contain;
+    box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.5)
 }
 #project-details {
 
     height: 30%;
     width: 100%;
+
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 5%;
 }
 
 
 #title {
-    margin-bottom: 25px;
+    margin-bottom: 10px;
     font-size: 50px;
     font-family: 'SundayMasthead';
     color: blue;
