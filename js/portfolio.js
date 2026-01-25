@@ -16,32 +16,38 @@ const projectDetails = document.getElementById('details-modal');
 const projectDescription = document.getElementById('project-details');
 
 const modalImage = document.getElementById('modal-img');
+const projectLink = document.getElementById('project-link');
 
 const projects = [
     {
         image: '../assets/portfolio-assets/dupify.png',
         title: 'Dupify',
         description: 'hello',
+        link: 'https://github.com/GartholomewIII/Dupify-Wrapped',
     },
     {
         image: '',
         title: 'LetsBuild',
         description: '',
+        link: 'https://github.com/GartholomewIII/lets-build/tree/main',
     },
     {
         image: '',
         title: 'First-Kernel',
         description: '',
+        link: 'https://github.com/GartholomewIII/babys-first-os',
     },
     {
         image: '',
         title: 'StarSyncStudio',
         description: '',
+        link: 'https://www.starsyncstudio.com/',
     },
     {
         image: '',
         title: 'StarSync Companion',
         description: '',
+        link: 'https://github.com/GartholomewIII/starsync-go',
     },
 
 
@@ -99,6 +105,8 @@ function UpdateProject() {
     modalImage.src = project.image;
     
     projectDescription.innerText = project.description;
+
+    projectLink.href = project.link;
 }
 
 UpdateProject();
